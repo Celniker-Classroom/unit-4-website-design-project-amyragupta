@@ -1,0 +1,28 @@
+/* Add Global styles here */
+h1{
+    text-align: center;
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color:rgb(128, 86, 86);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a{
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+    color:white
+}
+
+.navbar a:hover{
+    background-color: rgb(196, 159, 159);
+}
+
+.navbar li{
+    float: left;
+}
