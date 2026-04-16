@@ -47,3 +47,15 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+var k = 0;
+var txt = 'Lorem ipsum dummy text blabla.';
+var speed = 50;
+
+function typeWriter() {
+  if (k < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(k);
+    k++;
+    setTimeout(typeWriter, speed);
+  }
+}
