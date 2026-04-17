@@ -53,6 +53,8 @@ var txt = 'Lorem ipsum dummy text blabla.';
 var speed = 50;
 
 function typeWriter() {
+  console.log(txt);
+  console.log(txt.length);
   if (k < txt.length) {
     document.getElementById("demo").innerHTML += txt.charAt(k);
     k++;
