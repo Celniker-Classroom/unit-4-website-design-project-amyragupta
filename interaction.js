@@ -48,15 +48,40 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-var k = 0;
-var txt = 'Lorem ipsum dummy text blabla.';
-var speed = 50;
 
+
+
+
+
+
+
+var amyrathoughtstxt;
+if (document.title==="Miral Page"){
+  amyrathoughtstxt="miral thoughts"
+}
+
+else if (document.title==="Naisha Page"){
+  amyrathoughtstxt="naisha thoughts"
+
+}
+
+else if (document.title==="Juliana Page"){
+  amyrathoughtstxt="werl thoughts"
+
+}
+
+else if (document.title==="Nina Page"){
+  amyrathoughtstxt="nina thoughts"
+
+}
+
+var k = 0;
+var speed = 50;
 function typeWriter() {
-  console.log(txt);
-  console.log(txt.length);
-  if (k < txt.length) {
-    document.getElementById("demo").innerHTML += txt.charAt(k);
+  alert("button clicked");
+  
+  if (k < amyrathoughtstxt.length) {
+    document.getElementById("demo").innerHTML += amyrathoughtstxt.charAt(k);
     k++;
     setTimeout(typeWriter, speed);
   }
