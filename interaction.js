@@ -50,23 +50,27 @@ function topFunction() {
 
 
 
-
-
-
-
-
 var amyrathoughtstxt;
 if (document.title==="Miral Page"){
   amyrathoughtstxt="miral thoughts"
 }
 
 else if (document.title==="Naisha Page"){
-  amyrathoughtstxt="naisha thoughts"
+  amyrathoughtstxt=`Although Naisha is not really my best friend yet, I know she will be one day.
+  She is almost 8 years younger than me, so we don't really have much to connect over. I know she
+  really looks up to me, and I try to help her out. One of my favorite memories with her was when
+  she was a baby especially during COVID. We spent so much time together, and watching her grow 
+  up has been one of the highlights of my life. We do fight; however, I hope in the future we 
+  will be closer than ever.`
 
 }
 
 else if (document.title==="Juliana Page"){
-  amyrathoughtstxt="werl thoughts"
+  amyrathoughtstxt=`Juliana has been my best friend for 3 and a half years. We met on the 
+  first day of sixth grade and have been inseparable since. Juliana is the most empathetic 
+  person I know, and she inspires me everyday. She brings out the best version of myself 
+  and her positive energy brings a spark to my day. She was the only good part of middle
+  school and I can't imagine my life without her.`
 
 }
 
@@ -80,7 +84,7 @@ var speed = 50;
 function typeWriter() {
   alert("button clicked");
   
-  if (k < amyrathoughtstxt.length) {
+  if(k < amyrathoughtstxt.length) {
     document.getElementById("demo").innerHTML += amyrathoughtstxt.charAt(k);
     k++;
     setTimeout(typeWriter, speed);
