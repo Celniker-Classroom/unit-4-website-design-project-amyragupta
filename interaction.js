@@ -52,7 +52,7 @@ function topFunction() {
 
 var amyrathoughtstxt = "";
 if (document.title==='Miral Page'){
-  amyrathoughtstxt='miral thoughts';
+  amyrathoughtstxt='Miral is my childhood best friend. I have experienced so much with her including vacations.';
 }
 
 else if (document.title==='Naisha Page'){
@@ -74,7 +74,9 @@ else if (document.title==="Juliana Page"){
 }
 
 else if (document.title==="Nina Page"){
-  amyrathoughtstxt="nina thoughts";
+  amyrathoughtstxt=`Although I met Nina recently, she has quickly become one 
+  of my best friends. We understand almost everything about each other. She has been 
+  one of best parts of highschool.`;
 
 }
 
