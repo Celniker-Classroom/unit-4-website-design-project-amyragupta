@@ -83,7 +83,7 @@ function typeWriter() {
   var k = 0;
   var speed = 50;
   
-  alert("button pressed");
+  //alert("button pressed");
   if (k < amyrathoughtstxt.length) {
     document.getElementById("ducky").innerHTML += aboutmetxt.charAt(k);
     k++;
