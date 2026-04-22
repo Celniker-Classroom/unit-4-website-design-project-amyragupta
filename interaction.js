@@ -49,14 +49,14 @@ function topFunction() {
 }
 
 
-
-var amyrathoughtstxt = "";
-if (document.title==='Miral Page'){
-  amyrathoughtstxt='Miral is my childhood best friend. I have experienced so much with her including vacations.';
+function typeWriter() {
+  var amyrathoughtstxt = "";
+  if (document.title==='Miral Page'){
+    amyrathoughtstxt='Miral is my childhood best friend. I have experienced so much with her including vacations.';
 }
 
-else if (document.title==='Naisha Page'){
-  amyrathoughtstxt=`Although Naisha is not really my best friend yet, I know she will be one day.
+  else if (document.title==='Naisha Page'){
+    amyrathoughtstxt=`Although Naisha is not really my best friend yet, I know she will be one day.
   She is almost 8 years younger than me, so we don't really have much to connect over. I know she
   really looks up to me, and I try to help her out. One of my favorite memories with her was when
   she was a baby especially during COVID. We spent so much time together, and watching her grow 
@@ -64,8 +64,8 @@ else if (document.title==='Naisha Page'){
   will be closer than ever.`;
 }
 
-else if (document.title==="Juliana Page"){
-  amyrathoughtstxt=`Juliana has been my best friend for 3 and a half years. We met on the 
+  else if (document.title==="Juliana Page"){
+    amyrathoughtstxt=`Juliana has been my best friend for 3 and a half years. We met on the 
   first day of sixth grade and have been inseparable since. Juliana is the most empathetic 
   person I know, and she inspires me everyday. She brings out the best version of myself 
   and her positive energy brings a spark to my day. She was the only good part of middle
@@ -73,22 +73,21 @@ else if (document.title==="Juliana Page"){
 
 }
 
-else if (document.title==="Nina Page"){
-  amyrathoughtstxt=`Although I met Nina recently, she has quickly become one 
+  else if (document.title==="Nina Page"){
+    amyrathoughtstxt=`Although I met Nina recently, she has quickly become one 
   of my best friends. We understand almost everything about each other. She has been 
   one of best parts of highschool.`;
 
 }
 
-var k = 0;
-var speed = 50;
+  var k = 0;
+  var speed = 50;
   
-function typeWriter() {
-    alert("button pressed");
-    if (k < amyrathoughtstxt.length) {
-        document.getElementById("ducky").innerHTML += aboutmetxt.charAt(k);
-        k++;
-        setTimeout(typeWriter, speed);
+  alert("button pressed");
+  if (k < amyrathoughtstxt.length) {
+    document.getElementById("ducky").innerHTML += aboutmetxt.charAt(k);
+    k++;
+    setTimeout(typeWriter, speed);
   }
 }
 
